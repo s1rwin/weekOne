@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <table>
+      <caption>Sean's weekly schedule</caption>
+        <tr>
+          <th></th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+          <th>Sunday</th>
+        </tr>
+
+        <tr>
+        <th><b>Morning</b></th>
+          <td>Easy Run</td>
+          <td>Push Split</td>
+          <td>Easy Run</td>
+          <td>Pull Split</td>
+          <td>Easy Run</td>
+          <td rowspan="3" style="background-color: burlywood">Premier League</td>
+          <td>Long Run</td>
+        </tr>
+
+        <tr>
+          <th><b>Afternoon</b></th>
+          <td style="background-color: red" colspan="5">Code Academy</td>
+          <td>Brunch</td>
+        </tr>
+
+        <tr>
+            <th><b>Evening</b></th>
+              <td>Sleep</td>
+              <td>Sleep</td>
+              <td>More Sleep</td>
+              <td>Sleep</td>
+              <td>Bars?</td>
+              <td>Sleep</td>
+        </tr>
+      </table>
+
+      <form>
+          <fieldset>
+              <legend>Basic Information</legend>
+              <label for="firstName">First Name: </label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" />
+            
+              <label for="lastName">Last Name: </label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" />
+              <br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="john@doe.com">
+          
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" placeholder="402-000-0000">
+          </fieldset>
+
+          <fieldset>
+              <legend>Preferred Contact Method</legend>
+              <input type="radio" id="mail" name="pref" value="mail" checked="checked">
+              <label for="mail">Email</label>
+              <input type="radio" id="cell" name="pref" value="cell">
+              <label for="cell">Phone</label>
+          </fieldset>
+
+          <fieldset>
+              <legend>Optional Add Ons</legend>
+              <input type="checkbox" id="addOn1" name="opts" value="offers">
+              <label for="addOn1">Contact me with special offers</label>
+                <br>
+              <input type="checkbox" id="addOn2" name="opts" value="scores">
+              <label for="addOn2">Send me hourly score updates</label>
+                <br>
+              <input type="checkbox" id="addOn3" name="opts" value="stocks">
+              <label for="addOn3">Recieve stock trend reports automatically</label>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Choose your one (1) free stock</legend>
+              <select name="stonks" id="stonks">
+                <option value="tesla">Tesla (TSLA)</option>
+                <option value="apple">Apple (APPL)</option>
+                <option value="microsoft">Microsoft (MSFT)</option>
+              </select>
+          </fieldset>
+          <input type="submit" value="Submit Form">
+      </form>
+
+</body>
+</html>

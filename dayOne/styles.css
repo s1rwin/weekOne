@@ -1,0 +1,18 @@
+ td {
+      border: black 1px solid;
+      padding: 3px;
+  }
+
+  table {
+      border-spacing: 0px;
+      text-align: center;
+      
+  }
+
+  /* Centers the entire form and all elements 
+
+  form {
+      text-align: center;
+  }
+
+*/
